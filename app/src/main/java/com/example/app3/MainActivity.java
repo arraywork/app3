@@ -36,14 +36,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.fragment.app.FragmentManager;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;// ActionBarActivity теперь устарел
-import androidx.fragment.app.FragmentTransaction;
+
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static File filesN1, direcN1;
 
     public static int StartFragment1 =0;
+
     public static EditText editText1;
 
    // EditText        editText1;
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String          deleteCmd;
     File            sdPath,
                     sdFile;
-    AlertDialog.Builder aldi;
+    public static AlertDialog.Builder aldi;
     //RelativeLayout  relativeLayout1;
     int  StartRes = 1;
 
@@ -135,7 +136,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 relativeLayout1.setLeft(0);
                 relativeLayout1.setTop(0);
                 relativeLayout1.setBottom(480);
-                handler.removeCallbacks(runnable);
+
+                StartFragment1 = 0;
+                handler.postDelayed(runnable, 500);
             }
             if (StartFragment1 ==1){
                 if (OFD_ButtonPress == 2){
@@ -198,7 +201,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         actionBar.setDisplayHomeAsUpEnabled(true);
         Drawable drawable;
         drawable = this.getResources().getDrawable(R.drawable.file_icon_actionbar);
-        drawable.setBounds(0,0,60,60);
+        //drawable.setBounds(0,0,60,60);
         actionBar.setBackgroundDrawable(drawable);
 
         editText1.addTextChangedListener(new TextWatcher() {
@@ -277,8 +280,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()){
-
             case android.R.id.home:
+
                 FManager2 = getSupportFragmentManager();
                 FManager2 = FManager2.findFragmentById(R.id.relativeLayout1);
                 FManager2 = new BlankFragment2();
@@ -287,6 +290,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 FTransac2.commit();
                 StartFragment1 = 10;
                 handler.postDelayed(runnable, 50);
+
                 break;
 
             case R.id.i1_set:
