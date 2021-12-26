@@ -1,37 +1,5 @@
 package com.example.app3;
 
-/*import android.content.DialogInterface;
-import android.content.res.Configuration;
-import android.os.Bundle;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Environment;
-import android.os.Handler;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;*/
-
-
 import androidx.appcompat.app.ActionBar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -99,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     button6,
                     button7,
                     button8;
-
 
     final String    LOG_TAG = "myLogs",
                     FileName_IN = "MyFile_IN",
@@ -283,8 +250,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case android.R.id.home:
 
                 FManager2 = getSupportFragmentManager();
-                FManager2 = FManager2.findFragmentById(R.id.relativeLayout1);
-                FManager2 = new BlankFragment2();
+                Fragment2 = FManager2.findFragmentById(R.id.relativeLayout1);
+                Fragment2 = new BlankFragment2();
                 FTransac2 = FManager2.beginTransaction();
                 FTransac2.add(R.id.relativeLayout1, Fragment2);
                 FTransac2.commit();

@@ -3,6 +3,8 @@ package com.example.app3;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment; // вместо import android.support.v4.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +21,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+/**
+ * A simple{@link Fragment} subclass.
+ */
 
 import static com.example.app3.MainActivity.*;
 public class BlankFragment2 extends Fragment implements View.OnClickListener{
