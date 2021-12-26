@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/i1_set"
+        android:orderInCategory="1"
+        android:title="Новый"
+        />
+    <item
+        android:id="@+id/i2_set"
+        android:orderInCategory="1"
+        android:title="Открыть"
+        />
+    <item
+        android:id="@+id/i3_set"
+        android:orderInCategory="1"
+        android:title="Сохранить"
+        />
+    <item
+        android:id="@+id/i4_set"
+        android:orderInCategory="1"
+        android:title="Сохранить как..."
+        />
+    <item
+        android:id="@+id/i5_set"
+        android:orderInCategory="1"
+        android:title="Настройки"
+        />
+    <item
+        android:id="@+id/i6_set"
+        android:orderInCategory="1"
+        android:title="Выход"
+        />
+
+</menu>

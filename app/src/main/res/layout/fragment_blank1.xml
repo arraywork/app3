@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".BlankFragment1">
+
+    <Button
+        android:id="@+id/buttonF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="2dp"
+        android:text="Вернутся к выбору директории" />
+
+    <EditText
+        android:id="@+id/editTextF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/holo_orange_light"
+        android:text=" Директорий "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/holo_orange_light"
+        android:text=" Создать директорий "
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextF2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="155dp"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewF3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="185dp"
+        android:background="@android:color/holo_orange_light"
+        android:text=" Имя файла "
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextF3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="210dp"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonF2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="240dp"
+        android:layout_weight="1"
+        android:text="ОК" />
+
+    <Button
+        android:id="@+id/buttonF3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="240dp"
+        android:layout_weight="1"
+        android:text="Выход" />
+
+
+</FrameLayout>
